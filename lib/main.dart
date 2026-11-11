@@ -6,7 +6,7 @@
     } else {
       dateController.text = todayJalali();
     }
-  }
+  
 
   @override
   void dispose() {
