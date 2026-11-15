@@ -61,7 +61,7 @@ class BillDatabase {
     if (_database != null) return _database!;
 
     final dbPath = await getDatabasesPath();
-    final dbFile = join(dbPath, 'bills.db');
+    final dbFile = path.join(dbPath, 'bills.db');
 
     _database = await openDatabase(
       dbFile,
